@@ -1,0 +1,366 @@
+{
+  "users": [
+    {
+      "firstName": "Pesho",
+      "lastName": "Peshev",
+      "username": "PePi2121",
+      "password": "PePi2121856",
+      "userSex": "male",
+      "userType": "user",
+      "userAvatar": "",
+      "userDescription": "aasdfa;sldmfla;sjdflaksjdfalskdfjalk",
+      "userStatus": "active",
+      "dateOfRegistry": "20/3/2022 - 3:23",
+      "id": 1
+    },
+    {
+      "firstName": "Shon",
+      "lastName": "Nguen",
+      "username": "nguenshon",
+      "password": "nguenshon93",
+      "userSex": "male",
+      "userType": "user",
+      "userAvatar": "",
+      "userDescription": "asdfmalsdmflasmkdfasdfasdfasdfasdfasdfasdf",
+      "userStatus": "active",
+      "dateOfRegistry": "20/3/2022 - 4:1",
+      "id": 2
+    },
+    {
+      "firstName": "Petya",
+      "lastName": "Radeva",
+      "username": "PePi2121",
+      "password": "PePi212121",
+      "userSex": "female",
+      "userType": "user",
+      "userAvatar": "",
+      "userDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      "userStatus": "active",
+      "dateOfRegistry": "20/3/2022 - 15:49",
+      "id": 3
+    },
+    {
+      "firstName": "Nina",
+      "lastName": "Green",
+      "username": "PockrusPage",
+      "password": "firefire1234",
+      "userSex": "female",
+      "userType": "admin",
+      "userAvatar": "https://randomuser.me/api/portraits/women/60.jpg",
+      "userDescription": "9238 Pockrus Page Rd",
+      "userStatus": "active",
+      "dateOfRegistry": "20/3/2022 - 20:30",
+      "id": 4
+    },
+    {
+      "firstName": "Esther",
+      "lastName": "Kelly",
+      "username": "esther.kelly",
+      "password": "indyindy1234",
+      "userSex": "female",
+      "userType": "user",
+      "userAvatar": "https://randomuser.me/api/portraits/women/33.jpg",
+      "userDescription": "4288 Woodland St",
+      "userStatus": "deactivated",
+      "dateOfRegistry": "20/3/2022 - 20:32",
+      "id": 5
+    },
+    {
+      "firstName": "Leroy ",
+      "lastName": "Grant",
+      "username": "leroy.grant99",
+      "password": "barbara345781",
+      "userSex": "male",
+      "userType": "admin",
+      "userAvatar": "https://randomuser.me/api/portraits/men/91.jpg",
+      "userDescription": "917 Spring St",
+      "userStatus": "active",
+      "dateOfRegistry": "20/3/2022 - 20:33",
+      "id": 6
+    },
+    {
+      "firstName": "Yolanda",
+      "lastName": "Barnett",
+      "username": "yolanda.bar",
+      "password": "natasha1567",
+      "userSex": "female",
+      "userAvatar": "https://randomuser.me/api/portraits/women/14.jpg",
+      "userDescription": "2647 W Pecan St",
+      "userStatus": "deactivated",
+      "dateOfRegistry": "20/3/2022 - 20:39",
+      "id": 7
+    }
+  ],
+  "recipe": [
+    {
+      "recipeName": "Pan-Roasted Chicken Breasts",
+      "shortDescription": "These chicken breasts are fast, easy, and delicious. By 'pan-roasting,' you can easily monitor the internal temp. Leaving the skin on adds a lot of flavor and much needed moisture.",
+      "duration": [
+        "0",
+        "30"
+      ],
+      "products": "4 boneless chicken breast halves with skin\n\nsalt and freshly ground black pepper to taste\n\n1 tablespoon chopped fresh herbs (thyme, parsley, rosemary) (Optional)\n\n2 tablespoons olive oil\n\n¼ cup apple cider vinegar\n\n4 tablespoons cold butter, cut into small pieces\n\n1 tablespoon chicken broth (or water), if needed to thin sauce",
+      "imageResult": "https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F43%2F2020%2F02%2Fimage-8-1.jpeg",
+      "fullDescription": "Step 1\nSeason chicken on both sides with salt and pepper.\n\nStep 2\nHeat olive oil in a heavy skillet over medium-high heat until it starts to shimmer. Place chicken breasts in skillet skin side down. Sprinkle with fresh herbs. Do not disturb the breasts until the skin side sears, 5 or 6 minutes. Turn chicken.\n\nStep 3\nCook until internal temperature reaches 150 degrees F, about 5 minutes. Add vinegar and butter to pan with chicken. Shake pan gently until butter melts and internal temperature of chicken reaches 160 to 165 degrees F, 2 to 3 minutes more. Add a splash of chicken broth or water if sauce needs to be thinned.",
+      "tags": [
+        "lunch",
+        "dinner",
+        "gluten-free"
+      ],
+      "userId": 2,
+      "username": "nguenshon",
+      "id": 1
+    },
+    {
+      "recipeName": "Chicken and Feta Burgers",
+      "shortDescription": "These Mediterranean-inspired chicken patties are a light contrast to your beef burgers and complement any backyard get-together. If you use all-breast meat, add some olive oil to the meat mixture so they don't dry out. ",
+      "duration": [
+        "0",
+        "20"
+      ],
+      "products": "1 ½ pounds ground chicken\n\n3 tablespoons chopped fresh oregano\n\n1 tablespoon Kalamata-olive tapenade\n\n2 ounces crumbled feta cheese\n\n1 ½ tablespoons crushed garlic\n\n¼ teaspoon kosher salt\n\n⅛ tablespoon coarse-ground black pepper",
+      "imageResult": "https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fimages.media-allrecipes.com%2Fuserphotos%2F1924509.jpg",
+      "fullDescription": "Step 1\nMix chicken, oregano, tapenade, feta cheese, and garlic together in a bowl; form into 4 patties. Season burgers with salt and pepper.\n\nStep 2\nPreheat an outdoor grill for high heat and lightly oil the grate with olive oil.\n\nStep 3\nCook patties until charred on bottom, about 5 minutes. Flip the burgers and finish cooking, refraining from flattening with your spatula until no longer pink in the middle, about 5 minutes more. Drain on a plate lined with paper towels before serving.",
+      "tags": [
+        "breakfast",
+        "dairy-free",
+        "gluten-free"
+      ],
+      "userId": 2,
+      "username": "nguenshon",
+      "id": 2
+    },
+    {
+      "recipeName": "Classic Waffles",
+      "shortDescription": "A lovely, crispy waffle perfect for the morning.",
+      "duration": [
+        "0",
+        "30"
+      ],
+      "products": "2 cups all-purpose flour\n\n1 teaspoon salt\n\n4 teaspoons baking powder\n\n2 tablespoons white sugar\n\n2 eggs\n\n1 ½ cups warm milk\n\n⅓ cup butter, melted\n\n1 teaspoon vanilla extract",
+      "imageResult": "https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fpublic-assets.meredithcorp.io%2Fc69261efa4d825689cd3307f7082c1c0%2F164661054163DF72EA-F8B7-4158-AE95-655BA498DCB0.jpeg&w=595&h=791&c=sc&poi=face&q=60",
+      "fullDescription": "Step 1\nIn a large bowl, mix together flour, salt, baking powder and sugar; set aside. Preheat waffle iron to desired temperature.\n\nStep 2\nIn a separate bowl, beat the eggs. Stir in the milk, butter and vanilla. Pour the milk mixture into the flour mixture; beat until blended.\n\nStep 3\nLadle the batter into a preheated waffle iron. Cook the waffles until golden and crisp. Serve immediately.",
+      "tags": [
+        "breakfast",
+        "desert",
+        "vegetarian"
+      ],
+      "userId": 1,
+      "username": "PePi2121",
+      "id": 3
+    },
+    {
+      "recipeName": "Classic Hash Browns",
+      "shortDescription": "These classic diner-style hash browns are crispy on the outside and fluffy on the inside.",
+      "duration": [
+        "1",
+        "10"
+      ],
+      "products": "2 russet potatoes, peeled\n\n3 tablespoons clarified butter\n\nsalt and ground black pepper to taste\n\n1 pinch cayenne pepper, or to taste\n\n1 pinch paprika, or to taste",
+      "imageResult": "https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F43%2F2021%2F10%2F27%2FClassic-Hash-Browns-2000.jpg",
+      "fullDescription": "Step 1\nShred potatoes into a large bowl filled with cold water. Stir until water is cloudy, drain, and cover potatoes again with fresh cold water. Stir again to dissolve excess starch. Drain potatoes well, pat dry with paper towels, and squeeze out any excess moisture.\n\nStep 2\nHeat clarified butter in a large non-stick pan over medium heat. Sprinkle shredded potatoes into the hot butter and season with salt, black pepper, cayenne pepper, and paprika.\n\nStep 3\nCook potatoes until a brown crust forms on the bottom, about 5 minutes. Continue to cook and stir until potatoes are browned all over, about 5 more minutes.",
+      "tags": [
+        "breakfast",
+        "vegetarian",
+        "vegan",
+        "dairy-free"
+      ],
+      "userId": 1,
+      "username": "PePi2121",
+      "id": 4
+    },
+    {
+      "recipeName": "Bacon for the Family or a Crowd",
+      "shortDescription": "This is the way to get crisp bacon without having to constantly turn it, watch over it, or get burnt by splatters of grease. It 'fries' up flat and doesn't curl, ",
+      "duration": [
+        "0",
+        "20"
+      ],
+      "products": "1 pound thick sliced bacon",
+      "imageResult": "https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fimages.media-allrecipes.com%2Fuserphotos%2F666312.jpg",
+      "fullDescription": "Step 1\nPreheat oven to 350 degrees F (175 degrees C). Line a baking sheet with aluminum foil. Arrange bacon on baking sheet in a single layer with the edges touching or slightly overlapping.\n\nStep 2\nBake in preheated oven to desired degree of doneness, 10 to 15 minutes. Remove bacon from the baking sheet with tongs or a fork, and drain on a paper towel-lined plate.",
+      "tags": [
+        "breakfast",
+        "lunch",
+        "dairy-free"
+      ],
+      "userId": 1,
+      "username": "PePi2121",
+      "id": 5
+    },
+    {
+      "recipeName": "California Melt",
+      "shortDescription": "A satisfying open-face vegetarian sandwich with avocado, almonds and mushrooms.",
+      "duration": [
+        "1",
+        "10"
+      ],
+      "products": "4 slices whole-grain bread, lightly toasted\n\n1 avocado, sliced\n\n1 cup sliced mushrooms\n\n⅓ cup sliced toasted almonds\n\n1 tomato, sliced\n\n4 slices Swiss cheese",
+      "imageResult": "https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F43%2F2021%2F08%2F11%2F60037-6-2x1-1.jpg",
+      "fullDescription": "Step 1\nPreheat the oven broiler.\n\nStep 2\nLay the toasted bread out on a baking sheet. Top each slice of bread with 1/4 of the avocado, mushrooms, almonds, and tomato slices. Top each with a slice of Swiss cheese.\n\nStep 3\nBroil the open-face sandwiches until the cheese melts and begins to bubble, about 2 minutes. Serve the sandwiches warm.",
+      "tags": [
+        "lunch",
+        "dairy-free"
+      ],
+      "userId": 4,
+      "username": "PockrusPage",
+      "id": 6
+    },
+    {
+      "recipeName": "Slow Cooker Spicy Black-Eyed Peas",
+      "shortDescription": "Enjoy this easy crock pot recipe that's perfect for pot luck dinners and barbecues.",
+      "duration": [
+        "3",
+        "40"
+      ],
+      "products": "6 cups water\n\n1 cube chicken bouillon\n\n1 pound dried black-eyed peas, sorted and rinsed\n\n1 onion, diced\n\n2 cloves garlic, diced\n\n1 red bell pepper, stemmed, seeded, and diced\n\n1 jalapeno chile, seeded and minced\n\n8 ounces diced ham\n\n4 slices bacon, chopped",
+      "imageResult": "https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fimages.media-allrecipes.com%2Fuserphotos%2F1071417.jpg",
+      "fullDescription": "Step 1\nPour the water into a slow cooker, add the bouillon cube, and stir to dissolve. Combine the black-eyed peas, onion, garlic, bell pepper, jalapeno pepper, ham, bacon, cayenne pepper, cumin, salt, and pepper; stir to blend. Cover the slow cooker and cook on Low for 6 to 8 hours until the beans are tender.",
+      "tags": [
+        "lunch",
+        "dinner"
+      ],
+      "userId": 4,
+      "username": "PockrusPage",
+      "id": 7
+    },
+    {
+      "recipeName": "Healthier Sloppy Joes",
+      "shortDescription": "This healthier version of sloppy joes includes more veggies and real garlic. Be sure to serve on whole wheat buns!",
+      "duration": [
+        "0",
+        "30"
+      ],
+      "products": "1 pound lean ground beef\n\n¼ cup chopped onion\n\n¼ cup chopped green bell pepper\n\n2 carrots, finely chopped\n\n2 cloves garlic, minced\n\n1 teaspoon prepared yellow mustard\n\n¾ cup ketchup\n\n1 tablespoon brown sugar\n\nsalt and ground black pepper to taste",
+      "imageResult": "https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fimages.media-allrecipes.com%2Fuserphotos%2F876321.jpg",
+      "fullDescription": "Step 1\nHeat skillet over medium-high heat; cook and stir beef, onion, green bell pepper, carrots, and garlic until beef is browned, about 10 minutes. Drain off liquids.\n\nStep 2\nStir in mustard, ketchup, and brown sugar and mix thoroughly. Reduce heat to low and simmer until sauce has thickened, about 30 minutes. Season with salt and pepper.",
+      "tags": [
+        "dinner",
+        "lunch",
+        "dairy-free"
+      ],
+      "userId": 4,
+      "username": "PockrusPage",
+      "id": 8
+    },
+    {
+      "recipeName": "Cocktail Meatballs I",
+      "shortDescription": "Simple meatballs with an unusual chili sauce/grape jelly coating. Quite a combination of tastes and textures. Note: After cooking, I like to keep the meatballs warm in a slow cooker until ready to serve.",
+      "duration": [
+        "1",
+        "10"
+      ],
+      "products": "½ cup dried bread crumbs\n\n⅓ cup chopped onion\n\n¼ cup milk\n\n1 egg\n\n1 teaspoon salt\n\n½ teaspoon Worcestershire sauce\n\n⅛ teaspoon ground black pepper\n\n¼ cup shortening\n\n12 fluid ounces tomato-based chili sauce",
+      "imageResult": "https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fimages.media-allrecipes.com%2Fuserphotos%2F1114968.jpg",
+      "fullDescription": "Step 1\nIn a large bowl, combine ground beef, bread crumbs, onion, milk, egg, salt, Worcestershire sauce, and ground black pepper. Mix together, and shape into meatballs.\n\nStep 2\nIn a large skillet, heat shortening over medium heat. Add meatballs, and cook until browned, about 5 to 7 minutes. Remove from skillet, and drain on paper towels.\n\nStep 3\nAdd chili sauce and jelly to skillet; heat, stirring, until jelly is melted. Return meatballs to skillet, and stir until coated. Reduce heat to low. Simmer, uncovered, for 30 minutes.",
+      "tags": [
+        "dinner",
+        "dairy-free",
+        "lunch"
+      ],
+      "userId": 5,
+      "username": "esther.kelly",
+      "id": 9
+    },
+    {
+      "recipeName": "Turkey Cocktail Meatballs with Orange Cranberry Glaze",
+      "shortDescription": "You can make these ahead and freeze them without the glaze, then the day of the party, defrost them and simply reheat in the sauce.",
+      "duration": [
+        "0",
+        "40"
+      ],
+      "products": "1 ¼ pounds ground turkey\n\n¼ teaspoon poultry seasoning\n\n½ teaspoon garlic salt\n\n1 teaspoon onion powder\n\n1 teaspoon salt\n\n½ teaspoon ground black pepper\n\n¼ teaspoon Worcestershire sauce\n\n1 pinch cayenne pepper",
+      "imageResult": "https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fimages.media-allrecipes.com%2Fuserphotos%2F7804687.jpg",
+      "fullDescription": "Step 1\nMix the turkey, poultry seasoning, garlic salt, onion powder, salt, pepper, Worcestershire sauce, and cayenne pepper together in a bowl. Stir in the egg, milk, and bread crumbs. Cover with plastic and refrigerate for 1 hour.\n\nStep 2\nHeat olive oil in skillet over medium heat. Roll the turkey mixture into balls, about one tablespoon each. Place the meatballs in a single layer in the skillet. Brown meatballs on all sides, flipping occasionally. Place browned meatballs on a clean baking sheet. Set aside.\n\nStep 3\nCombine cranberry sauce, marmalade, and chicken broth over medium heat in the skillet used to cook the meatballs. Stir in the jalapeno and Fresno peppers, then return meatballs to skillet. Reduce heat to medium-low, and continue to cook until the meatballs are no longer pink in the center and glaze is reduced. Season with salt and pepper.",
+      "tags": [
+        "breakfast",
+        "lunch",
+        "vegan",
+        "dairy-free"
+      ],
+      "userId": 5,
+      "username": "esther.kelly",
+      "id": 10
+    },
+    {
+      "recipeName": "Air Fryer Chicken Kiev Balls",
+      "shortDescription": "These chicken Kiev balls are crispy on the outside, tender on the inside, stuffed with seasoned butter, and sure to be a hit on game day or any day of the year. ",
+      "duration": [
+        "1",
+        "0"
+      ],
+      "products": "½ cup unsalted butter, softened\n\n2 tablespoons chopped fresh flat-leaf parsley\n\n2 cloves garlic, crushed\n\n1 (19.1 ounce) package ground chicken breast\n\n2 eggs, beaten\n\n1 cup panko bread crumbs\n\n1 teaspoon paprika\n\n1 teaspoon salt\n\n½ teaspoon ground black pepper\n\ncooking spray",
+      "imageResult": "https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fimages.media-allrecipes.com%2Fuserphotos%2F7737310.jpg",
+      "fullDescription": "Step 1\nMix butter, parsley, and garlic together in a bowl until evenly combined. Divide mixture into 12 equal parts on a baking sheet. Freeze until solid, about 20 minutes.\n\nStep 2\nShape ground chicken into 12 balls. Make a deep thumbprint in the center of each ball. Place a piece of frozen herbed butter in the indention and wrap meat around the butter until it is fully encased. Repeat with remaining balls.\n\nStep 3\nPlace beaten eggs in a bowl. Combine panko, paprika, salt, and pepper in a separate bowl.\n\nStep 4\nDip 1 ground chicken ball first in the beaten eggs, then in the seasoned bread crumbs. Dip the ball back into the egg and in the seasoned bread crumbs once more. Repeat with remaining balls. Place on a baking sheet and freeze for 10 minutes.\n\nStep 5\nPreheat an air fryer to 400 degrees F (200 degrees C). Place 1/2 of the balls in the air fryer basked and spray with nonstick cooking spray.\n\nStep 6\nCook for 5 minutes. Flip balls over with tongs and spray again with nonstick cooking spray. Cook for 5 minutes more. Repeat with remaining chicken balls.",
+      "tags": [
+        "lunch",
+        "dinner"
+      ],
+      "userId": 5,
+      "username": "esther.kelly",
+      "id": 11
+    },
+    {
+      "recipeName": "Easy Gluten-Free Macaroni and Cheese",
+      "shortDescription": "Cheesy gluten-free deliciousness that is super easy to make. Kid-approved!",
+      "duration": [
+        "0",
+        "50"
+      ],
+      "products": "10 ounces gluten-free elbow pasta\n\n¼ cup butter (Optional)\n\n1 ¼ teaspoons salt\n\n¾ teaspoon mustard powder\n\n4 cups milk\n\n¼ cup cornstarch\n\n4 cups shredded Cheddar cheese, divided",
+      "imageResult": "https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fimages.media-allrecipes.com%2Fuserphotos%2F2285304.jpg",
+      "fullDescription": "Step 1\nPreheat oven to 375 degrees F (190 degrees C). Grease a 9x13-inch baking dish.\n\nStep 2\nBring a large pot of lightly salted water to a boil. Cook elbow macaroni in the boiling water, stirring occasionally until cooked through but firm to the bite, 8 minutes. Drain.\n\nStep 3\nMelt 1/4 cup butter in a saucepan over medium heat. Stir salt and mustard powder into melted butter and remove saucepan from heat.\n\nStep 4\nWhisk milk and cornstarch together in a bowl until smooth; stir into butter mixture until well blended. Return saucepan to stove; cook milk mixture, stirring constantly, over medium heat until sauce is thickened, about 5 minutes. Remove saucepan from heat.\n\nStep 5\nStir 3 cups Cheddar cheese into sauce until heat from sauce melts cheese. Add pasta to cheese sauce and stir well; pour into the prepared baking dish.\n\nStep 6\nCombine remaining 1 cup Cheddar cheese, gluten-free bread crumbs, 1 teaspoon butter, and paprika in a bowl; sprinkle over pasta mixture.\n\nStep 7\nBake in the preheated oven until top is crunchy, about 30 minutes.",
+      "tags": [
+        "gluten-free",
+        "dairy-free",
+        "vegetarian",
+        "lunch",
+        "dinner"
+      ],
+      "userId": 6,
+      "username": "leroy.grant99",
+      "id": 12
+    },
+    {
+      "recipeName": "Turkey Spaghetti Zoodles",
+      "shortDescription": "A super simple one-pot dinner that's low calorie, low carb, paleo, gluten-free and takes just 10 minutes to make. This will be your go-to week night dinner! Serve immediately or store in the refrigerator up to 3 days.",
+      "duration": [
+        "0",
+        "30"
+      ],
+      "products": "1 teaspoon extra-virgin olive oil\n\n1 ¼ pounds ground turkey breast\n\n1 cup diced green bell pepper\n\n1 tablespoon minced garlic\n\n2 teaspoons Italian seasoning\n\n½ teaspoon ground black pepper\n\n¼ teaspoon salt\n\n¼ teaspoon red pepper flakes\n\n3 cups marinara sauce\n\n2 cups baby spinach leaves",
+      "imageResult": "https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fimages.media-allrecipes.com%2Fuserphotos%2F4460524.jpg",
+      "fullDescription": "Step 1\nHeat olive oil in a large skillet over medium heat. Add turkey breast, green pepper, garlic, Italian seasoning, ground black pepper, salt, and red pepper flakes; cook and stir until turkey is lightly browned, 4 to 5 minutes.\n\nStep 2\nStir marinara sauce and baby spinach into the turkey mixture; cook and stir until marinara sauce is warm through, about 3 minutes.\n\nStep 3\nStir zucchini noodles into the sauce with tongs; cook and stir until the zucchini is slightly tender, 2 to 3 minutes.",
+      "tags": [
+        "dairy-free",
+        "gluten-free",
+        "vegan",
+        "vegetarian",
+        "dinner"
+      ],
+      "userId": 6,
+      "username": "leroy.grant99",
+      "id": 13
+    },
+    {
+      "recipeName": "Paleo Pecan-Maple Salmon",
+      "shortDescription": "This recipe is not only easy but healthy and tasty! Paleo, gluten-free and dairy-free!",
+      "duration": [
+        "2",
+        "30"
+      ],
+      "products": "4 (4 ounce) fillets salmon\n\nsalt and ground black pepper to taste\n\n½ cup pecans\n\n3 tablespoons pure maple syrup\n\n1 tablespoon apple cider vinegar\n\n1 teaspoon smoked paprika\n\n½ teaspoon chipotle pepper powder\n\n½ teaspoon onion powder",
+      "imageResult": "https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fimages.media-allrecipes.com%2Fuserphotos%2F2410943.jpg",
+      "fullDescription": "Step 1\nPlace salmon fillets on a baking sheet and season with salt and black pepper.\n\nStep 2\nCombine pecans, maple syrup, vinegar, paprika, chipotle powder, and onion powder in a food processor; pulse until texture is crumbly. Spoon pecan mixture on top of each salmon fillet, coating the entire top surface. Refrigerate coated salmon, uncovered, for 2 to 3 hours.\n\nStep 3\nPreheat oven to 425 degrees F (220 degrees C).\n\nStep 4\nBake salmon in the preheated oven until fish flakes easily with a fork, 12 to 14 minutes.",
+      "tags": [
+        "dairy-free",
+        "gluten-free",
+        "dinner",
+        "lunch"
+      ],
+      "userId": 6,
+      "username": "leroy.grant99",
+      "id": 14
+    }
+  ]
+}
