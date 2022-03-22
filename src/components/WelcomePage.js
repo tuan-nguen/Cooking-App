@@ -6,8 +6,8 @@ import Meal2 from '../images/Meal02.jpg';
 import Meal3 from '../images/Meal03.jpg';
 import Meal4 from '../images/Meal04.jpg';
 import { deepPurple } from '@mui/material/colors';
-import Link from './Link';
 import { Box } from '@mui/system';
+import { Link } from 'react-router-dom';
 
 export default function WelcomePage() {
     const purpleColor = deepPurple[500];
@@ -42,7 +42,7 @@ export default function WelcomePage() {
                         >
                             Find all your favorite recipes here.
                         </Typography>
-                        <Link className='item' href='/signup'>
+                        <Link to='/sign-up' style={{ textDecoration: 'none' }}>
                             <Button variant='contained' color='secondary'>Sign Up</Button>
                         </Link>
                     </Grid>

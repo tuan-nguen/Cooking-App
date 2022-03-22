@@ -3,9 +3,9 @@ import { Avatar, Box, Container, CssBaseline, TextField, Typography, Button } fr
 import LockOutlinedIcon from '@mui/icons-material/LockOutlined';
 import { useState, useEffect } from 'react';
 import UserApiClient from '../service/user-api-client';
-import Link from './Link';
+import { Link } from 'react-router-dom'; 
 
-function UserLoginForm({ setIsLoggedIn, setLogInUser, setHasSignUp }) {
+function UserLoginForm({ setIsLoggedIn, setLogInUser }) {
     const [dbUsername, setDbUsername] = useState([]);
     const [dbPassword, setDbPassword] = useState([]);
     const [dbUsers, setDbUsers] = useState([]); 
@@ -37,10 +37,6 @@ function UserLoginForm({ setIsLoggedIn, setLogInUser, setHasSignUp }) {
                 console.log(dbUsers[index]);
             }
         }
-    }
-
-    function handleBackButton() {
-        setHasSignUp(false);
     }
 
     return (
@@ -87,14 +83,14 @@ function UserLoginForm({ setIsLoggedIn, setLogInUser, setHasSignUp }) {
                         variant="contained"
                         sx={{ mt: 2, mb: 1 }}
                     >
-                        Sign In
+                        Log In
                     </Button>
-                    <Link href='/' >
+                    <Link to='/' style={{ textDecoration: 'none' }}>
                         <Button
                             fullWidth
                             variant="contained"
                             sx={{ mt: 1, mb: 2 }}
-                            onClick={handleBackButton}
+                            // onClick={handleBackButton}
                         >
                             Back to Home Page
                         </Button>

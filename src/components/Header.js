@@ -5,16 +5,8 @@ import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
-import SearchIcon from '@mui/icons-material/Search';
 import InputBase from '@mui/material/InputBase';
-import AccountCircle from '@mui/icons-material/AccountCircle';
-import IconButton from '@mui/material/IconButton';
-import { deepPurple } from '@mui/material/colors';
-import { BorderColor } from '@mui/icons-material';
-import Link from './Link';
-
-const purpleColor = deepPurple[500];
-
+import { Link } from 'react-router-dom'; 
 
 const Search = styled('div')(({ theme }) => ({
     position: 'relative',
@@ -79,21 +71,8 @@ export default function Header() {
                     <Typography variant="h6" component="div" sx={{ flexGrow: 1 }} color='#ede7f6'>
                         Tasty Pasty
                     </Typography>
-                    {/* <Search
-                        sx={{ flexGrow: 1 }}
-                        color='text.primary'
-                    >
-                        <SearchIconWrapper >
-                            <SearchIcon sx={{ color: '#ede7f6' }} />
-                        </SearchIconWrapper>
-                        <StyledInputBase
-                            sx={{ color: '#ede7f6' }}
-                            placeholder="Search…"
-                            inputProps={{ 'aria-label': 'search' }}
-                        />
-                    </Search> */}
                     <Box sx={{ flexGrow: 1, display: 'inline-flex', flexDirection: 'row-reverse' }}>
-                        <Link className='item' href='/signup'>
+                        <Link to='/sign-up' style={{ textDecoration: 'none' }}>
                             <Button
                                 variant='contained'
                                 sx={{ ml: 1, mr: 1, bgcolor: '#ede7f6', color: '#673ab7' }}
@@ -101,7 +80,7 @@ export default function Header() {
                                 Sign up
                             </Button>
                         </Link>
-                        <Link className='item' href='/signin'>
+                        <Link to='/sign-in' style={{ textDecoration: 'none' }}>
                             <Button
                                 variant='outlined' sx={{ ml: 1, mr: 1, color: '#ede7f6', }}
                             >
