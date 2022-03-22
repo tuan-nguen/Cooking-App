@@ -21,8 +21,8 @@ export default function UserList() {
             <Box>
                 <Grid container spacing={2}>
                     {users.map(user => (
-                        <Grid item sm={3}>
-                            <UserCard key={user.id} user={user} />
+                        <Grid item sm={3} key={user.id}>
+                            <UserCard user={user} />
                         </Grid>
                     ))}
                 </Grid>

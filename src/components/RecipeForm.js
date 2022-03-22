@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import { Avatar, Button, Checkbox, Container, CssBaseline, FormControl, FormControlLabel, FormGroup, Grid, InputLabel, MenuItem, Select, TextField, Typography } from '@mui/material';
 import { Box } from '@mui/system';
 import BlenderIcon from '@mui/icons-material/Blender';
 import { Recipe } from '../models/recipe-model';
-import Link from './Link'
 import UserApiClient from '../service/user-api-client'; 
 
 function RecipeForm({ logInUser, setRecipePosted }) {
@@ -184,7 +184,7 @@ function RecipeForm({ logInUser, setRecipePosted }) {
                             </Button>
                         </Grid>
                         <Grid item xs={12}>
-                            <Link className='item' href='/signin'>
+                            <Link to='/sign-in'>
                                 <Button
                                     fullWidth
                                     variant="contained"

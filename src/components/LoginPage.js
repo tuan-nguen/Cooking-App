@@ -3,17 +3,13 @@ import HeaderUser from './HeaderUser';
 import Footer from './Footer';
 import { Box } from '@mui/system';
 import UserApiClient from '../service/user-api-client'; 
-
-import maleAvatar from '../images/male.jpg'; 
-import femaleAvatar from '../images/female.jpg'; 
-import RecipeList from './RecipeList';
 import TabBars from './TabBars';
 
-export default function LoginPage({ logInUserId, setIsLogInForm }) {
+export default function LoginPage({ logInUser, setIsLogInForm }) {
   const [currentUser, setCurrentUser] = useState({}); 
 
   useEffect(() => {
-    UserApiClient.fetchUserId(logInUserId)
+    UserApiClient.fetchUserId(logInUser.id)
     .then(result => {
       setCurrentUser(result); 
     })

@@ -21,8 +21,8 @@ export default function RecipeList() {
             <Box>
                 <Grid container spacing={2}>
                     {recipes.slice(Math.max(recipes.length - 10, 1)).map(recipe => (
-                        <Grid item sm={4}>
-                            <RecipeReviewCard key={recipe.id} recipe={recipe} />
+                        <Grid item sm={4} key={recipe.id}>
+                            <RecipeReviewCard recipe={recipe} />
                         </Grid>
                     ))
                     }

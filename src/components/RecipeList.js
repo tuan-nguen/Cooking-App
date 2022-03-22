@@ -17,12 +17,12 @@ export default function RecipeList() {
     }, [])
 
     return (
-        <Container component='main'>
+        <Container component={'div'}>
             <Box>
                 <Grid container spacing={2}>
                     {recipes.map(recipe => (
-                        <Grid item sm={4}>
-                        <RecipeReviewCard key={recipe.id} recipe={recipe} />
+                        <Grid item sm={4} key={recipe.id}>
+                            <RecipeReviewCard recipe={recipe} />
                         </Grid>
                     ))}
                 </Grid>

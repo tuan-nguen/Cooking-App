@@ -5,7 +5,7 @@ import { useState, useEffect } from 'react';
 import UserApiClient from '../service/user-api-client';
 import { Link } from 'react-router-dom'; 
 
-function UserLoginForm({ setIsLoggedIn, setLogInUser }) {
+function UserLoginForm({ setIsLogInForm, setLogInUser }) {
     const [dbUsername, setDbUsername] = useState([]);
     const [dbPassword, setDbPassword] = useState([]);
     const [dbUsers, setDbUsers] = useState([]); 
@@ -32,7 +32,7 @@ function UserLoginForm({ setIsLoggedIn, setLogInUser }) {
         if (dbUsername.includes(username)) {
             const index = dbUsername.indexOf(username);
             if (dbPassword[index] === password) {
-                setIsLoggedIn(true);
+                setIsLogInForm(true);
                 setLogInUser(dbUsers[index]);
                 console.log(dbUsers[index]);
             }
@@ -95,7 +95,7 @@ function UserLoginForm({ setIsLoggedIn, setLogInUser }) {
                             Back to Home Page
                         </Button>
                     </Link>
-                    <Link href='/signup'>
+                    <Link to='/signup' style={{ textDecoration: 'none' }}>
                         {"Don't have an account? Sign Up"}
                     </Link>
                 </Box>

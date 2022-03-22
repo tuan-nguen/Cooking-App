@@ -1,6 +1,6 @@
 import { Box, Button, Container, Typography } from '@mui/material';
 import React from 'react';
-import Link from './Link';
+import { Link } from 'react-router-dom';
 
 export default function RecipeFormSuccess({ setRecipePosted }) {
     function onClickSetter() {
@@ -20,7 +20,7 @@ export default function RecipeFormSuccess({ setRecipePosted }) {
                 <Typography component='h2' variant='h3'>
                     Successfully posted a recipe!
                 </Typography>
-                <Link className='item' href='/signin'>
+                <Link to='/logged-in'>
                     <Button
                         fullWidth
                         variant="contained"
@@ -30,7 +30,7 @@ export default function RecipeFormSuccess({ setRecipePosted }) {
                         Go Back To Dashboard
                     </Button>
                 </Link>
-                <Link className='item' href='/recipe-form'>
+                <Link to='/recipe-form'>
                     <Button
                         fullWidth
                         variant="contained"

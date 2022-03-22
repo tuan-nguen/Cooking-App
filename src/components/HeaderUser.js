@@ -1,8 +1,9 @@
 import * as React from 'react';
 import { useState, useEffect } from 'react';
-import { styled, alpha } from '@mui/material/styles';
 import UserApiClient from '../service/user-api-client';
+import { Link } from 'react-router-dom';
 
+import { styled, alpha } from '@mui/material/styles';
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
@@ -10,7 +11,6 @@ import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 import SearchIcon from '@mui/icons-material/Search';
 import InputBase from '@mui/material/InputBase';
-import Link from './Link';
 import { Avatar } from '@mui/material';
 
 
@@ -100,7 +100,7 @@ export default function HeaderUser({ currentUser, setIsLogInForm }) {
                     </Search>
                     <Box sx={{ flexGrow: 1, display: 'inline-flex', flexDirection: 'row-reverse' }}>
                         <Avatar alt={`${firstName} ${lastName}`} src={userAvatar}/>
-                        <Link className='item' href='/'>
+                        <Link to='/'>
                             <Button
                                 variant='contained'
                                 sx={{ ml: 1, mr: 1, bgcolor: '#ede7f6', color: '#673ab7' }}
@@ -109,7 +109,7 @@ export default function HeaderUser({ currentUser, setIsLogInForm }) {
                                 Sign out
                             </Button>
                         </Link>
-                        <Link className='item' href='/recipe-form'>
+                        <Link to='/recipe-form'>
                             <Button
                                 variant='outlined' sx={{ ml: 1, mr: 1, color: '#ede7f6', }}
                             >

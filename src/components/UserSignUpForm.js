@@ -8,7 +8,7 @@ import { Box } from '@mui/system';
 import LockOutlinedIcon from '@mui/icons-material/LockOutlined';
 import { User } from '../models/user-model';
 import UserApiClient from '../service/user-api-client';
-import Link from './Link';
+import { Link } from 'react-router-dom'
 import male from '../images/male.jpg'; 
 import female from '../images/female.jpg'; 
 
@@ -181,7 +181,7 @@ function UserSignUpForm({setHasSignUp}) {
                             </Button>
                         </Grid>
                         <Grid item xs={12}>
-                            <Link className='item' href='/'>
+                            <Link to='/'>
                                 <Button
                                     fullWidth
                                     variant="contained"
