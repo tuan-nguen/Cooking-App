@@ -11,6 +11,7 @@
       "userDescription": "aasdfa;sldmfla;sjdflaksjdfalskdfjalk",
       "userStatus": "active",
       "dateOfRegistry": "20/3/2022 - 3:23",
+      "favoriteRecipes": [],
       "id": 1
     },
     {
@@ -24,6 +25,7 @@
       "userDescription": "asdfmalsdmflasmkdfasdfasdfasdfasdfasdfasdf",
       "userStatus": "active",
       "dateOfRegistry": "20/3/2022 - 4:1",
+      "favoriteRecipes": [],
       "id": 2
     },
     {
@@ -37,7 +39,11 @@
       "userDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
       "userStatus": "active",
       "dateOfRegistry": "20/3/2022 - 15:49",
-      "id": 3
+      "favoriteRecipes": [],
+      "id": 3,
+      "op": "add",
+      "path": "/favoriteRecipes/0",
+      "value": "5"
     },
     {
       "firstName": "Nina",
@@ -50,6 +56,7 @@
       "userDescription": "9238 Pockrus Page Rd",
       "userStatus": "active",
       "dateOfRegistry": "20/3/2022 - 20:30",
+      "favoriteRecipes": [],
       "id": 4
     },
     {
@@ -63,6 +70,7 @@
       "userDescription": "4288 Woodland St",
       "userStatus": "deactivated",
       "dateOfRegistry": "20/3/2022 - 20:32",
+      "favoriteRecipes": [],
       "id": 5
     },
     {
@@ -76,6 +84,7 @@
       "userDescription": "917 Spring St",
       "userStatus": "active",
       "dateOfRegistry": "20/3/2022 - 20:33",
+      "favoriteRecipes": [],
       "id": 6
     },
     {
@@ -88,6 +97,7 @@
       "userDescription": "2647 W Pecan St",
       "userStatus": "deactivated",
       "dateOfRegistry": "20/3/2022 - 20:39",
+      "favoriteRecipes": [],
       "id": 7
     }
   ],

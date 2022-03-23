@@ -10,6 +10,7 @@ export class User {
         userDescription,
         userStatus = 'ACTIVE',
         dateOfRegistry,
+        favoriteRecipes = [],
         // dateOfLastActivity = 'none'
     ) {
         this.firstName = firstName;
@@ -23,6 +24,7 @@ export class User {
         this.userDescription = userDescription;
         this.userStatus = userStatus; 
         this.dateOfRegistry = dateOfRegistry;
+        this.favoriteRecipes = favoriteRecipes; 
         // this.dateOfLastActivity = dateOfLastActivity;
     }
 }

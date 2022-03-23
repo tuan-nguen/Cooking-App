@@ -24,6 +24,18 @@ class UserApiClient {
         }));
     }
 
+    async addUserFavoriteRecipes(userId, arrayRecipes) {
+        return this.handleResponse(async () => fetch(USER_API_BASE_URL + `/users/${userId}`,{
+            headers: {
+                'Content-Type': 'application/json'
+            }, 
+            method: 'PATCH', 
+            body: JSON.stringify({
+                "favoriteRecipes": arrayRecipes
+            })
+        }));
+    }
+
     async deleteUser(userId) {
         return this.handleResponse(async() => fetch(USER_API_BASE_URL+`/users/${userId}`, {
             method: 'DELETE',

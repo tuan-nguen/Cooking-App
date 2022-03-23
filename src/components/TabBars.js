@@ -1,13 +1,17 @@
 import * as React from 'react';
 import PropTypes from 'prop-types';
+import { useState } from 'react';
+
+//material ui comp
 import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
+
+//components
 import RecipeList from './RecipeList';
 import RecipeListLastAdded from './RecipeListLastAdded';
 import UserList from './UserList';
-import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 
 function TabPanel(props) {
     const { children, value, index, ...other } = props;
@@ -42,7 +46,7 @@ function a11yProps(index) {
     };
 }
 
-export default function BasicTabs() {
+export default function BasicTabs({ logInUser }) {
     const [value, setValue] = React.useState(0);
 
     const handleChange = (event, newValue) => {
@@ -59,7 +63,7 @@ export default function BasicTabs() {
                 </Tabs>
             </Box>
             <TabPanel value={value} index={0}>
-                <RecipeList />
+                <RecipeList logInUser={logInUser}/>
             </TabPanel>
             <TabPanel value={value} index={1}>
                 <RecipeListLastAdded />

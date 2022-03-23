@@ -1,5 +1,8 @@
 import * as React from 'react';
 import { useState } from 'react';
+import UserApiClient from '../service/user-api-client'; 
+
+//material components
 import { styled } from '@mui/material/styles';
 import Card from '@mui/material/Card';
 import CardHeader from '@mui/material/CardHeader';
@@ -11,10 +14,13 @@ import Avatar from '@mui/material/Avatar';
 import IconButton from '@mui/material/IconButton';
 import Typography from '@mui/material/Typography';
 import { red } from '@mui/material/colors';
-import FavoriteIcon from '@mui/icons-material/Favorite';
-import AccessTimeFilledIcon from '@mui/icons-material/AccessTimeFilled';
-import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+
+//icons
 import MoreVertIcon from '@mui/icons-material/MoreVert';
+import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+import AccessTimeFilledIcon from '@mui/icons-material/AccessTimeFilled';
+import FavoriteIcon from '@mui/icons-material/Favorite';
+import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
 
 const ExpandMore = styled((props) => {
     const { expand, ...other } = props;
@@ -27,12 +33,25 @@ const ExpandMore = styled((props) => {
     }),
 }));
 
-export default function RecipeReviewCard({ recipe }) {
+export default function RecipeReviewCard({ recipe, setFavoriteRecipes, favoriteRecipes }) {
     const [expanded, setExpanded] = useState(false);
+    const [isFavorite, setIsFavorite] = useState(favoriteRecipes.includes(recipe.id)); 
 
     const handleExpandClick = () => {
         setExpanded(!expanded);
     };
+
+    const handleFavoriteButton = () => { 
+        
+        if(isFavorite) {
+            setIsFavorite(false); 
+            let oldFavoriteRecipes = [...favoriteRecipes]; 
+            console.log(oldFavoriteRecipes); 
+        } else {
+            setIsFavorite(true); 
+            setFavoriteRecipes(oldRecipes => [...oldRecipes, recipe.id]);
+        }
+    }; 
 
     return (
         <Card sx={{ maxWidth: 345 }}>
@@ -62,8 +81,8 @@ export default function RecipeReviewCard({ recipe }) {
                 </Typography>
             </CardContent>
             <CardActions disableSpacing>
-                <IconButton aria-label="add to favorites">
-                    <FavoriteIcon />
+                <IconButton aria-label="add to favorites" onClick={handleFavoriteButton}>
+                    {isFavorite ? <FavoriteIcon /> : <FavoriteBorderIcon />}
                 </IconButton>
                 <IconButton aria-label="share">
                     <AccessTimeFilledIcon /> 

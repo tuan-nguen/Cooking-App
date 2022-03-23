@@ -21,7 +21,7 @@ export default function LoginPage({ logInUser, setIsLogInForm }) {
   return (
     <Box>
       <HeaderUser currentUser={currentUser} setIsLogInForm={setIsLogInForm} />
-      <TabBars />
+      <TabBars logInUser={logInUser}/>
       <Footer />
     </Box>
   )
