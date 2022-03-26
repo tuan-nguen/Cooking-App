@@ -48,7 +48,7 @@ function a11yProps(index) {
 
 export default function BasicTabs({ logInUser }) {
     const [value, setValue] = React.useState(0);
-
+    
     const handleChange = (event, newValue) => {
         setValue(newValue);
     };

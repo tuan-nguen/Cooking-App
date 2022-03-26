@@ -7,6 +7,8 @@ export default function RecipeList({ logInUser }) {
     const [recipes, setRecipes] = useState([]);
     const [favoriteRecipes, setFavoriteRecipes] = useState([...logInUser.favoriteRecipes]); 
 
+    UserApiClient.addUserFavoriteRecipes(logInUser, favoriteRecipes); 
+
     console.log(favoriteRecipes) ; 
 
     useEffect(() => {

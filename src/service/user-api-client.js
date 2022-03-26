@@ -7,11 +7,11 @@ class UserApiClient {
 
     //USERS
     async fetchUsers() {
-        return this.handleResponse(() => fetch(USER_API_BASE_URL + '/users')); 
+        return this.handleResponse(async () => fetch(USER_API_BASE_URL + '/users')); 
     }
 
     async fetchUserId(userId) {
-        return this.handleResponse(() => fetch(USER_API_BASE_URL + `/users/${userId}`));
+        return this.handleResponse(async () => fetch(USER_API_BASE_URL + `/users/${userId}`));
     }
 
     async postNewUser(user) {
@@ -24,8 +24,8 @@ class UserApiClient {
         }));
     }
 
-    async addUserFavoriteRecipes(userId, arrayRecipes) {
-        return this.handleResponse(async () => fetch(USER_API_BASE_URL + `/users/${userId}`,{
+    async addUserFavoriteRecipes(user, arrayRecipes) {
+        return this.handleResponse(async () => fetch(USER_API_BASE_URL + `/users/${user.id}`,{
             headers: {
                 'Content-Type': 'application/json'
             }, 
@@ -45,7 +45,7 @@ class UserApiClient {
 
     //RECIPES
     async fetchRecipes() {
-        return this.handleResponse(() => fetch(USER_API_BASE_URL + '/recipe')); 
+        return this.handleResponse(async () => fetch(USER_API_BASE_URL + '/recipe')); 
     }
 
     async postNewRecipe(recipe) {

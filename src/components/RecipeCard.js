@@ -45,8 +45,7 @@ export default function RecipeReviewCard({ recipe, setFavoriteRecipes, favoriteR
         
         if(isFavorite) {
             setIsFavorite(false); 
-            let oldFavoriteRecipes = [...favoriteRecipes]; 
-            console.log(oldFavoriteRecipes); 
+            setFavoriteRecipes(favoriteRecipes.filter(id => id !== recipe.id)); 
         } else {
             setIsFavorite(true); 
             setFavoriteRecipes(oldRecipes => [...oldRecipes, recipe.id]);
