@@ -6,22 +6,10 @@ import UserApiClient from '../service/user-api-client';
 import TabBars from './TabBars';
 
 export default function LoginPage({ logInUser, setIsLogInForm }) {
-  const [currentUser, setCurrentUser] = useState({});
 
-  useEffect(() => {
-    UserApiClient.fetchUserId(logInUser.id)
-      .then(result => {
-        setCurrentUser(result);
-      })
-      .catch(error => {
-        console.log(error);
-      })
-  }, [])
-  
-  console.log(logInUser);
   return (
     <Box>
-      <HeaderUser currentUser={currentUser} setIsLogInForm={setIsLogInForm} />
+      <HeaderUser logInUser={logInUser} setIsLogInForm={setIsLogInForm} />
       <TabBars logInUser={logInUser} />
       <Footer />
     </Box>

@@ -13,8 +13,10 @@
       "dateOfRegistry": "20/3/2022 - 3:23",
       "favoriteRecipes": [
         3,
-        10,
-        9
+        8,
+        7,
+        12,
+        11
       ],
       "id": 1
     },
@@ -375,6 +377,25 @@
       "userId": 6,
       "username": "leroy.grant99",
       "id": 14
+    },
+    {
+      "recipeName": "Mexican-Inspired Chicken Thigh and Rice Skillet",
+      "shortDescription": "A complete dinner, with chicken, rice, and vegetables, in less than an hour? Yes! This colorful and nutritious one-pan dinner can be on your table quickly on a busy weeknight.",
+      "duration": [
+        "1",
+        "0"
+      ],
+      "products": "1 teaspoon salt, or to taste\n\n1 teaspoon granulated garlic\n\n½ teaspoon ground cumin\n\n½ teaspoon smoked paprika\n\n¼ teaspoon ground coriander\n\n¼ teaspoon ground black pepper, or to taste\n\n1 ½ pounds boneless, skinless chicken thighs\n\n1 tablespoon unsalted butter\n\n1 tablespoon olive oil\n\n1 cup chopped onion",
+      "imageResult": "https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fimages.media-allrecipes.com%2Fuserphotos%2F9414195.jpg&w=595&h=595&c=sc&poi=face&q=60",
+      "fullDescription": "Step 1\nCombine salt, granulated garlic, cumin, paprika, coriander, and 1/4 teaspoon black pepper in a small bowl.\n\nStep 2\nPat chicken thighs dry with paper towels. Sprinkle seasoning mix evenly over both sides of chicken thighs.\n\nStep 3\nCombine butter and olive oil in a deep-sided, 11-inch nonstick skillet over medium-high heat; cook until butter is melted and foamy. Swirl the butter and oil together and place chicken thighs in the skillet in a single layer. Cook until just brown, 3 to 4 minutes per side. Remove from the pan with tongs and set aside. Keep warm.\n\nStep 4\nReduce heat to medium and add onion and bell peppers to the skillet. Cook, stirring often, until the onion starts to turn translucent, 3 to 4 minutes. Stir in rice and chili powder; cook and stir until rice begins to pick up some color, 3 to 5 minutes.\n\nStep 5\nStir in drained tomatoes and garlic; cook and stir for 1 minute. Add reserved tomato liquid, chicken broth, and water; bring to a boil. Adjust salt and pepper if necessary.",
+      "tags": [
+        "dinner",
+        "dairy-free",
+        "gluten-free"
+      ],
+      "userId": 1,
+      "username": "PePi2121",
+      "id": 15
     }
   ]
 }

@@ -34,7 +34,6 @@ function UserLoginForm({ setIsLogInForm, setLogInUser }) {
             if (dbPassword[index] === password) {
                 setIsLogInForm(true);
                 setLogInUser(dbUsers[index]);
-                console.log(dbUsers[index]);
             }
         }
     }

@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react';
 import UserApiClient from '../service/user-api-client';
 import RecipeReviewCard from './RecipeCard';
 
-export default function RecipeList({ favoriteRecipes, setFavoriteRecipes }) {
+export default function RecipeFavorite({ favoriteRecipes, setFavoriteRecipes }) {
     const [recipes, setRecipes] = useState([]);
 
     useEffect(() => {
@@ -20,11 +20,13 @@ export default function RecipeList({ favoriteRecipes, setFavoriteRecipes }) {
         <Container component={'div'}>
             <Box>
                 <Grid container spacing={2}>
-                    {recipes.map(recipe => (
-                        <Grid item sm={4} key={recipe.id}>
-                        <RecipeReviewCard recipe={recipe} setFavoriteRecipes={setFavoriteRecipes} favoriteRecipes={favoriteRecipes}/>
-                        </Grid>
-                    ))}
+                    {recipes
+                        .filter(recipe => favoriteRecipes.includes(recipe.id))
+                        .map(recipe => (
+                            <Grid item sm={4} key={recipe.id}>
+                                <RecipeReviewCard recipe={recipe} setFavoriteRecipes={setFavoriteRecipes} favoriteRecipes={favoriteRecipes} />
+                            </Grid>
+                        ))}
                 </Grid>
             </Box>
         </Container>

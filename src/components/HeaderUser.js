@@ -57,10 +57,10 @@ const StyledInputBase = styled(InputBase)(({ theme }) => ({
 }));
 
 
-export default function HeaderUser({ currentUser, setIsLogInForm }) { 
-    const userAvatar = currentUser.userAvatar; 
-    const firstName = currentUser.firstName;
-    const lastName = currentUser.lastName;
+export default function HeaderUser({ logInUser, setIsLogInForm }) { 
+    const userAvatar = logInUser.userAvatar; 
+    const firstName = logInUser.firstName;
+    const lastName = logInUser.lastName;
 
     function handleSignOut() {
         setIsLogInForm(false);
