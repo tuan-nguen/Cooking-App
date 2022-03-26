@@ -12,11 +12,13 @@ import { Link } from 'react-router-dom'
 import male from '../images/male.jpg'; 
 import female from '../images/female.jpg'; 
 
-function UserSignUpForm({setHasSignUp}) {
+function UserSignUpForm({ setHasSignUp, isUpdating }) {
     const [gender, setGender] = useState();
     const [role, setRole] = useState();
     const [status, setStatus] = useState();
 
+    const url = window.location.pathname;
+    const updateUserId = url.substring(url.lastIndexOf('/') + 1);
 
     function handleSubmitSignUpForm(event) {
         event.preventDefault();
@@ -40,6 +42,28 @@ function UserSignUpForm({setHasSignUp}) {
         }
     }
 
+    function handleUpdateUser(event) {
+        event.preventDefault();
+        const data = new FormData(event.currentTarget);
+        const firstName = data.get('firstName');
+        const lastName = data.get('lastName');
+        const username = data.get('username');
+        const password = data.get('password');
+        const image = data.get('image');
+        const shortDescription = data.get('shortDescription');
+        const currentDate = new Date();
+        const dateOfRegistry = `${currentDate.getDate()}/${currentDate.getMonth() + 1}/${currentDate.getFullYear()} - ${currentDate.getHours()}:${currentDate.getMinutes()}`;
+
+        if (username.length > 15 || password.length < 8 || !/\d/.test(password) || shortDescription.lenght > 512) {
+            return false;
+        } else {
+            const updatedUser = new User(firstName, lastName, username, password, gender, role, image, shortDescription, status, dateOfRegistry);
+            console.log(updatedUser);
+            UserApiClient.updateUser(updatedUser, updateUserId);
+            setHasSignUp(true); 
+        }
+    }
+
     return (
         <Container component='main' maxWidth='sm'>
             <CssBaseline />
@@ -55,9 +79,10 @@ function UserSignUpForm({setHasSignUp}) {
                     <LockOutlinedIcon />
                 </Avatar>
                 <Typography component="h1" variant="h5">
-                    Sign Up
+                    {isUpdating ? "Update User" : "Sign Up"}
                 </Typography>
-                <Box component="form" sx={{ mt: 3 }} onSubmit={handleSubmitSignUpForm}>
+
+                <Box component="form" sx={{ mt: 3 }} onSubmit={isUpdating ? handleUpdateUser : handleSubmitSignUpForm}>
                     <Grid container spacing={2}>
                         <Grid item xs={12} sm={6}>
                             <TextField
@@ -177,7 +202,7 @@ function UserSignUpForm({setHasSignUp}) {
                                 variant="contained"
                                 sx={{ mt: 1, mb: 1 }}
                             >
-                                Sign Up
+                                {isUpdating ? "Update User" : "Sign Up"}
                             </Button>
                         </Grid>
                         <Grid item xs={12}>

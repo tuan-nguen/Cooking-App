@@ -19,6 +19,7 @@ function App() {
             <Routes>
                 <Route path='/' element={<HomePage />} />
                 <Route path='/sign-up' element={<UserSignUpForm />} />
+                <Route path='/update-user/:id' element={<UserSignUpForm isUpdating={true} />} />
                 <Route
                     path='sign-in'
                     element={
@@ -33,6 +34,12 @@ function App() {
                     element={recipePosted 
                         ? <RecipeFormSuccess setRecipePosted={setRecipePosted}/>
                         : <RecipeForm logInUser={logInUser} setRecipePosted={setRecipePosted}/>}
+                />
+                <Route
+                    path='recipe-form/:id'
+                    element={recipePosted 
+                        ? <RecipeFormSuccess setRecipePosted={setRecipePosted}/>
+                        : <RecipeForm logInUser={logInUser} setRecipePosted={setRecipePosted} isUpdating={true} />}
                 />
             </Routes>
         </Router>

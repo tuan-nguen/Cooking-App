@@ -42,6 +42,16 @@ class UserApiClient {
         }));
     }
 
+    async updateUser(updatedUser, userId) {
+        return this.handleResponse(async () => fetch(USER_API_BASE_URL + `/users/${userId}`,{
+            headers: {
+                'Content-Type': 'application/json'
+            }, 
+            method: 'PUT', 
+            body: JSON.stringify(updatedUser),
+        }));
+    }
+
 
     //RECIPES
     async fetchRecipes() {
@@ -61,6 +71,16 @@ class UserApiClient {
     async deleteRecipe(recipeId) {
         return this.handleResponse(async() => fetch(USER_API_BASE_URL+`/recipe/${recipeId}`, {
             method: 'DELETE',
+        }));
+    }
+
+    async putUpdateRecipe(updatedRecipe, recipeId) {
+        return this.handleResponse(async () => fetch(USER_API_BASE_URL + `/recipe/${recipeId}`, {
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            method: 'PUT',
+            body: JSON.stringify(updatedRecipe)
         }));
     }
 

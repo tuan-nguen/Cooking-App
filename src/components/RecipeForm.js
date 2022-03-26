@@ -7,10 +7,13 @@ import BlenderIcon from '@mui/icons-material/Blender';
 import { Recipe } from '../models/recipe-model';
 import UserApiClient from '../service/user-api-client'; 
 
-function RecipeForm({ logInUser, setRecipePosted }) {
+function RecipeForm({ logInUser, setRecipePosted, isUpdating }) {
     const [hour, setHour] = useState('0');
     const [minutes, setMinutes] = useState('0');
     const [tags, setTags] = useState([]);
+
+    const url = window.location.pathname;
+    const updateRecipeId = url.substring(url.lastIndexOf('/') + 1);
 
     function handleHourChange(event) {
         setHour(event.target.value);
@@ -54,6 +57,29 @@ function RecipeForm({ logInUser, setRecipePosted }) {
         }
     }
 
+    function handleRecipeUpdate(event) {
+        event.preventDefault();
+
+        const data = new FormData(event.target);
+        const recipeName = data.get('recipeName');
+        const shortDescription = data.get('shortDescription');
+        const duration = [hour, minutes];
+        const products = data.get('products');
+        const image = data.get('image');
+        const fullDescription = data.get('fullDescription');
+
+        if(recipeName.length > 80 || shortDescription.length > 256 || fullDescription.length > 2048) {
+            return false; 
+        } else {
+            const updatedRecipe = new Recipe(
+                recipeName, shortDescription, duration,
+                products, image, fullDescription, tags, logInUser.id, logInUser.username
+            );
+            UserApiClient.putUpdateRecipe(updatedRecipe, updateRecipeId); 
+            setRecipePosted(true);
+        }
+    }
+
     return (
         <Container component='main' maxWidth='sm'>
             <CssBaseline />
@@ -69,10 +95,10 @@ function RecipeForm({ logInUser, setRecipePosted }) {
                     <BlenderIcon />
                 </Avatar>
                 <Typography component='h1' variant='h5'>
-                    Post your Recipe
+                    {isUpdating ? "Update a Recipe" : "Post your Recipe"}
                 </Typography>
 
-                <Box component='form' sx={{ mt: 2 }} onSubmit={handleRecipeSubmit}>
+                <Box component='form' sx={{ mt: 2 }} onSubmit={isUpdating ? handleRecipeUpdate : handleRecipeSubmit}>
                     <Grid container spacing={2}>
                         <Grid item xs={12}>
                             <TextField
@@ -180,7 +206,7 @@ function RecipeForm({ logInUser, setRecipePosted }) {
                                 variant="contained"
                                 sx={{ mt: 1, mb: 1, bgcolor:'#673ab7' }}
                             >
-                                Post a new Recipe
+                                {isUpdating ? "Update a Recipe" : "Post a new Recipe"}
                             </Button>
                         </Grid>
                         <Grid item xs={12}>

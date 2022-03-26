@@ -14,6 +14,9 @@ import Avatar from '@mui/material/Avatar';
 import IconButton from '@mui/material/IconButton';
 import Typography from '@mui/material/Typography';
 import { red } from '@mui/material/colors';
+import Menu from '@mui/material/Menu';
+import MenuItem from '@mui/material/MenuItem';
+import { Button } from '@mui/material';
 
 //icons
 import MoreVertIcon from '@mui/icons-material/MoreVert';
@@ -36,6 +39,15 @@ const ExpandMore = styled((props) => {
 export default function RecipeReviewCard({ recipe, setFavoriteRecipes, favoriteRecipes }) {
     const [expanded, setExpanded] = useState(false);
     const [isFavorite, setIsFavorite] = useState(favoriteRecipes.includes(recipe.id)); 
+
+    const [anchorEl, setAnchorEl] = useState(null);
+    const open = Boolean(anchorEl);
+    const handleClick = (event) => {
+        setAnchorEl(event.currentTarget);
+    };
+    const handleClose = () => {
+        setAnchorEl(null);
+    };
 
     const handleExpandClick = () => {
         setExpanded(!expanded);
@@ -62,7 +74,20 @@ export default function RecipeReviewCard({ recipe, setFavoriteRecipes, favoriteR
                 }
                 action={
                     <IconButton aria-label="settings">
-                        <MoreVertIcon />
+                        <MoreVertIcon onClick={handleClick} />
+                        <Menu
+                            id="basic-menu"
+                            anchorEl={anchorEl}
+                            open={open}
+                            onClose={handleClose}
+                            MenuListProps={{
+                                'aria-labelledby': 'basic-button',
+                            }}
+                        >
+                            <MenuItem >
+                                <Button href={`recipe-form/${recipe.id}`}>Edit recipe</Button>
+                            </MenuItem>
+                        </Menu>
                     </IconButton>
                 }
                 title={recipe.recipeName}
