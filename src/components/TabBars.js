@@ -12,6 +12,7 @@ import Box from '@mui/material/Box';
 import RecipeList from './RecipeList';
 import RecipeListLastAdded from './RecipeListLastAdded';
 import UserList from './UserList';
+import UserApiClient from '../service/user-api-client';
 
 function TabPanel(props) {
     const { children, value, index, ...other } = props;
@@ -47,8 +48,11 @@ function a11yProps(index) {
 }
 
 export default function BasicTabs({ logInUser }) {
-    const [value, setValue] = React.useState(0);
-    
+    const [value, setValue] = useState(0);
+    const [favoriteRecipes, setFavoriteRecipes] = useState([...logInUser.favoriteRecipes]);
+
+    UserApiClient.addUserFavoriteRecipes(logInUser, favoriteRecipes);
+
     const handleChange = (event, newValue) => {
         setValue(newValue);
     };
@@ -63,10 +67,10 @@ export default function BasicTabs({ logInUser }) {
                 </Tabs>
             </Box>
             <TabPanel value={value} index={0}>
-                <RecipeList logInUser={logInUser}/>
+                <RecipeList favoriteRecipes={favoriteRecipes} setFavoriteRecipes={setFavoriteRecipes}/>
             </TabPanel>
             <TabPanel value={value} index={1}>
-                <RecipeListLastAdded />
+                <RecipeListLastAdded favoriteRecipes={favoriteRecipes} setFavoriteRecipes={setFavoriteRecipes}/>
             </TabPanel>
             <TabPanel value={value} index={2}>
                 <UserList />

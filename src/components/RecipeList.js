@@ -3,13 +3,9 @@ import React, { useEffect, useState } from 'react';
 import UserApiClient from '../service/user-api-client';
 import RecipeReviewCard from './RecipeCard';
 
-export default function RecipeList({ logInUser }) {
+export default function RecipeList({ favoriteRecipes, setFavoriteRecipes }) {
     const [recipes, setRecipes] = useState([]);
-    const [favoriteRecipes, setFavoriteRecipes] = useState([...logInUser.favoriteRecipes]); 
 
-    UserApiClient.addUserFavoriteRecipes(logInUser, favoriteRecipes); 
-
-    console.log(favoriteRecipes) ; 
 
     useEffect(() => {
         UserApiClient.fetchRecipes()
